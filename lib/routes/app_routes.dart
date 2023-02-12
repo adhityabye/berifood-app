@@ -1,3 +1,4 @@
+import 'package:berifood_app/ui/home_screen.dart';
 import 'package:get/get.dart';
 import 'package:get/get_navigation/src/routes/default_transitions.dart';
 
@@ -28,6 +29,10 @@ class AppRoutes {
         GetPage(
           name: "/login",
           page: () => const LoginPage(),
+        ),
+        GetPage(
+          name: '/home',
+          page: () => const HomeScreen(),
         ),
       ];
 }
