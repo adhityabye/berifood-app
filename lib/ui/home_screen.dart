@@ -194,11 +194,16 @@ class HomeScreen extends StatelessWidget {
                         borderRadius: BorderRadius.circular(10),
                         color: Colors.white,
                       ),
-                      child: const Center(
-                        child: Image(
-                          image: AssetImage("assets/icons/tukar_poin.png"),
-                          height: 40,
-                          width: 40,
+                      child: InkWell(
+                        onTap: () {
+                          Get.toNamed("/tukar_poin");
+                        },
+                        child: const Center(
+                          child: Image(
+                            image: AssetImage("assets/icons/tukar_poin.png"),
+                            height: 40,
+                            width: 40,
+                          ),
                         ),
                       ),
                     ),
