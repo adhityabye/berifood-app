@@ -1,4 +1,5 @@
 import 'package:berifood_app/ui/home_screen.dart';
+import 'package:berifood_app/ui/introduction/food_page_restoran.dart';
 import 'package:get/get.dart';
 import 'package:get/get_navigation/src/routes/default_transitions.dart';
 
@@ -34,5 +35,9 @@ class AppRoutes {
           name: '/home',
           page: () => const HomeScreen(),
         ),
+        GetPage(
+          name: '/tukar_poin',
+          page: () => const TukarPoin(),
+        )
       ];
 }
