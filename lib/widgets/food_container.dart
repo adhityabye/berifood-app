@@ -5,7 +5,16 @@ import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:gap/gap.dart';
 
 class FoodContainer extends StatelessWidget {
-  const FoodContainer({super.key});
+  final String titleText;
+  final String subtitleText;
+  final String expTitle;
+  final String imgList;
+  const FoodContainer(
+      {super.key,
+      required this.titleText,
+      required this.subtitleText,
+      required this.expTitle,
+      required this.imgList});
 
   @override
   Widget build(BuildContext context) {
@@ -29,7 +38,7 @@ class FoodContainer extends StatelessWidget {
             Container(
               width: 100,
               height: 100,
-              child: Image.asset("assets/images/sosis_mayo.png"),
+              child: Image.asset(imgList),
             ),
             Container(
               padding: EdgeInsets.only(left: 10),
@@ -37,14 +46,14 @@ class FoodContainer extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    "Roti Bakar Sosis Mayo",
+                    titleText,
                     style: Styles.headLineStyle3,
                   ),
                   const Gap(5),
-                  Text("Roti bakar dengan toping sosis\nbakar dan mayonaise",
+                  Text(subtitleText,
                       style: Styles.headLineStyle4.copyWith(fontSize: 12)),
                   const Gap(5),
-                  Text("Kadaluarsa : 20 Desember 2023",
+                  Text(expTitle,
                       style: Styles.headLineStyle4.copyWith(fontSize: 12)),
                   Container(
                     width: 100,
