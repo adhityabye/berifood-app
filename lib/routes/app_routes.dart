@@ -1,4 +1,5 @@
-import 'package:berifood_app/ui/home_screen.dart';
+import 'package:berifood_app/ui/Pages/voucher_page.dart';
+import 'package:berifood_app/ui/Pages/home_screen.dart';
 import 'package:berifood_app/ui/introduction/food_page_restoran.dart';
 import 'package:get/get.dart';
 import 'package:get/get_navigation/src/routes/default_transitions.dart';
@@ -38,6 +39,10 @@ class AppRoutes {
         GetPage(
           name: '/tukar_poin',
           page: () => const TukarPoin(),
+        ),
+        GetPage(
+          name: '/voucher',
+          page: () => VoucherPage(),
         )
       ];
 }
