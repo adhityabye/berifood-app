@@ -103,17 +103,45 @@ class TukarPoin extends StatelessWidget {
                   scrollDirection: Axis.vertical,
                   child: Column(
                     children: [
-                      FoodContainer(),
+                      FoodContainer(
+                        titleText: "Sosis Mayo",
+                        subtitleText:
+                            "Sosi mayo dengan balutan\n saus mayo peju",
+                        expTitle: "17 April 2025",
+                        imgList: "assets/images/sosis_mayo.png",
+                      ),
                       const Gap(20),
-                      FoodContainer(),
+                      FoodContainer(
+                          titleText: "Sate Ayam Merah",
+                          subtitleText:
+                              "Sate ayam dengan bakaran merah\n yang lezat",
+                          expTitle: "20 Desember 2023",
+                          imgList: "assets/images/sate.png"),
                       const Gap(20),
-                      FoodContainer(),
+                      FoodContainer(
+                          titleText: "Roti Bakar Keju",
+                          subtitleText:
+                              "Roti bakar nikmat dengan\n keju mozarella",
+                          expTitle: "2 November 2023",
+                          imgList: "assets/images/roti.png"),
                       const Gap(20),
-                      FoodContainer(),
+                      FoodContainer(
+                        titleText: "Sosis Mayo",
+                        subtitleText:
+                            "Sosi mayo dengan balutan\n saus mayo peju",
+                        expTitle: "17 April 2025",
+                        imgList: "assets/images/sosis_mayo.png",
+                      ),
                       const Gap(20),
-                      FoodContainer(),
+                      FoodContainer(
+                          titleText: "Sate Ayam Merah",
+                          subtitleText:
+                              "Sate ayam dengan bakaran merah\n yang lezat",
+                          expTitle: "20 Desember 2023",
+                          imgList: "assets/images/sate.png"),
                       const Gap(20),
-                      FoodContainer(),
+
+                      //override
                     ],
                   ),
                 ),
