@@ -178,12 +178,17 @@ class HomeScreen extends StatelessWidget {
                         borderRadius: BorderRadius.circular(10),
                         color: Colors.white,
                       ),
-                      child: const Center(
-                        child: Image(
-                          image:
-                              AssetImage("assets/icons/leaderboard_icon.png"),
-                          height: 40,
-                          width: 40,
+                      child: InkWell(
+                        onTap: () {
+                          Get.toNamed("profile");
+                        },
+                        child: const Center(
+                          child: Image(
+                            image:
+                                AssetImage("assets/icons/leaderboard_icon.png"),
+                            height: 40,
+                            width: 40,
+                          ),
                         ),
                       ),
                     ),
@@ -268,6 +273,12 @@ class HomeScreen extends StatelessWidget {
           ),
 
           //bottom navigation bar
+          Gap(150),
+          Container(
+            width: 350,
+            height: 60,
+            child: BottomBar(),
+          ),
         ],
       ),
     );
