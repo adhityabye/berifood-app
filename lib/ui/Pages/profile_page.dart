@@ -17,10 +17,10 @@ class ProfilePage extends StatelessWidget {
             onTap: () {
               Get.toNamed("/home");
             },
-            // child: Icon(
-            //   Icons.arrow_back_ios,
-            //   color: primary,
-            // ),
+            child: Icon(
+              Icons.arrow_back_ios,
+              color: primary,
+            ),
           ),
           title: Text("Tantangan",
               style: Styles.headLineStyle2.copyWith(color: primary)),
@@ -69,10 +69,24 @@ class ProfilePage extends StatelessWidget {
                             ),
                           ),
                         ),
+                        Container(
+                          height: 30,
+                          width: 100,
+                          decoration: BoxDecoration(
+                              color: primary,
+                              borderRadius: BorderRadius.circular(10)),
+                          child: Center(
+                            child: Text(
+                              "Ubah Profil",
+                              style: Styles.headLineStyle3
+                                  .copyWith(color: Colors.white),
+                            ),
+                          ),
+                        ),
                       ],
                     ),
                     Container(
-                      padding: EdgeInsets.only(left: 10),
+                      padding: EdgeInsets.only(left: 15),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
@@ -86,6 +100,7 @@ class ProfilePage extends StatelessWidget {
                               ),
                             ],
                           ),
+                          const Gap(10),
                           Row(
                             children: [
                               Image.asset("assets/icons/coin.png"),
@@ -93,6 +108,40 @@ class ProfilePage extends StatelessWidget {
                               Gap(10),
                               Image.asset("assets/icons/diamond.png"),
                               Text("123"),
+                            ],
+                          ),
+                          const Gap(10),
+                          Row(
+                            children: [
+                              Container(
+                                width: 200,
+                                height: 12,
+                                decoration: BoxDecoration(
+                                  color: Color(0xFFE8E8E8),
+                                  borderRadius: BorderRadius.circular(10),
+                                ),
+                                child: Stack(
+                                  children: [
+                                    Container(
+                                      height: 12,
+                                      width: 100,
+                                      decoration: BoxDecoration(
+                                        color: primary,
+                                        borderRadius: BorderRadius.circular(10),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ],
+                          ),
+                          const Gap(10),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            children: [
+                              Text("100/240"),
+                              const Gap(90),
+                              Text("Level Up"),
                             ],
                           ),
                         ],
