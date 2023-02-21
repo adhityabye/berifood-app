@@ -1,3 +1,4 @@
+import 'package:berifood_app/ui/Pages/profile_page.dart';
 import 'package:berifood_app/ui/Pages/voucher_page.dart';
 import 'package:berifood_app/ui/Pages/home_screen.dart';
 import 'package:berifood_app/ui/introduction/food_page_restoran.dart';
@@ -43,6 +44,7 @@ class AppRoutes {
         GetPage(
           name: '/voucher',
           page: () => VoucherPage(),
-        )
+        ),
+        GetPage(name: '/profile', page: () => ProfilePage()),
       ];
 }
