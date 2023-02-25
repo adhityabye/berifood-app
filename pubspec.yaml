@@ -38,8 +38,9 @@ dependencies:
   get: ^4.6.5
   gap: ^2.0.1
   fluentui_system_icons: ^1.1.190
-  fluentui_icons: 
+  fluentui_icons: ^1.0.0
   google_nav_bar: ^5.0.6
+  group_button: ^5.2.2
 
 dev_dependencies:
   flutter_test:
