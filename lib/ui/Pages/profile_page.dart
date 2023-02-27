@@ -355,6 +355,91 @@ class ProfilePage extends StatelessWidget {
                   color: Color.fromARGB(255, 126, 126, 126),
                   thickness: 0.3,
                 ),
+                const Gap(25),
+                Container(
+                  width: 350,
+                  height: 100,
+                  decoration: BoxDecoration(
+                    color: Color.fromARGB(255, 217, 217, 217),
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                  child: Row(
+                    children: [
+                      Column(
+                        children: [
+                          Container(
+                            padding:
+                                EdgeInsets.only(bottom: 10, left: 20, top: 30),
+                            child: RichText(
+                              text: TextSpan(
+                                children: <TextSpan>[
+                                  TextSpan(
+                                      text: "Baca Artikel\n",
+                                      style: Styles.headLineStyle2),
+                                  TextSpan(
+                                      text: "Baca 5 Artikel yang ada",
+                                      style: Styles.headLineStyle2.copyWith(
+                                          color:
+                                              Color.fromARGB(255, 84, 84, 84),
+                                          fontSize: 14)),
+                                ],
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.end,
+                        children: [
+                          Container(
+                            padding:
+                                EdgeInsets.only(left: 70, top: 10, bottom: 10),
+                            child: Row(
+                              children: [
+                                Image.asset(
+                                  "assets/icons/spark.png",
+                                  scale: 0.7,
+                                ),
+                                Text("30"),
+                                const Gap(10),
+                                Image.asset("assets/icons/coin.png",
+                                    scale: 1.2),
+                                Text("150"),
+                              ],
+                            ),
+                          ),
+                          Container(
+                            height: 35,
+                            width: 80,
+                            child: Center(
+                              child: Text(
+                                "Ambil",
+                                style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 13,
+                                    fontWeight: FontWeight.bold),
+                              ),
+                            ),
+                            decoration: BoxDecoration(
+                                gradient: LinearGradient(
+                                  begin: Alignment.topRight,
+                                  end: Alignment.bottomLeft,
+                                  stops: [
+                                    0.2,
+                                    0.9,
+                                  ],
+                                  colors: [
+                                    Color(0xffFFBF18),
+                                    Color(0xffF27603)
+                                  ],
+                                ),
+                                borderRadius: BorderRadius.circular(8)),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                ),
               ],
             ),
           ),
