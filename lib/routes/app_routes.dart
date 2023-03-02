@@ -1,4 +1,5 @@
-import 'package:berifood_app/ui/Pages/profile_page.dart';
+import 'package:berifood_app/ui/Pages/challenge_page.dart';
+import 'package:berifood_app/ui/Pages/food_screen.dart';
 import 'package:berifood_app/ui/Pages/voucher_page.dart';
 import 'package:berifood_app/ui/Pages/home_screen.dart';
 import 'package:berifood_app/ui/introduction/food_page_restoran.dart';
@@ -46,5 +47,6 @@ class AppRoutes {
           page: () => VoucherPage(),
         ),
         GetPage(name: '/profile', page: () => ProfilePage()),
+        GetPage(name: '/food', page: () => FoodPage()),
       ];
 }
