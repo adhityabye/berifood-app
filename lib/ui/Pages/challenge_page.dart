@@ -6,6 +6,7 @@ import 'package:get/get.dart';
 import 'package:group_button/group_button.dart';
 
 import '../../utils/app_styles.dart';
+import 'bottom_bar.dart';
 
 class ProfilePage extends StatelessWidget {
   const ProfilePage({super.key});
@@ -440,6 +441,7 @@ class ProfilePage extends StatelessWidget {
                     ],
                   ),
                 ),
+                const Gap(20),
               ],
             ),
           ),

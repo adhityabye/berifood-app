@@ -5,7 +5,7 @@ import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:gap/gap.dart';
 import 'package:get/get.dart';
 
-import '../introduction/bottom_bar.dart';
+import 'bottom_bar.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -259,10 +259,21 @@ class HomeScreen extends StatelessWidget {
                       ),
                     ),
                     Container(
-                      child: Image.asset(
-                        "assets/icons/makanan.png",
-                        height: 100,
-                        width: 100,
+                      width: 120,
+                      height: 120,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10),
+                        color: Colors.white,
+                      ),
+                      child: InkWell(
+                        onTap: () => Get.toNamed("/food"),
+                        child: const Center(
+                          child: Image(
+                            image: AssetImage("assets/icons/makanan.png"),
+                            height: 80,
+                            width: 80,
+                          ),
+                        ),
                       ),
                     ),
                   ],

@@ -1,4 +1,5 @@
 import 'package:berifood_app/routes/app_routes.dart';
+import 'package:berifood_app/ui/Pages/bottom_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -20,6 +21,7 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       theme: ThemeData(primarySwatch: Colors.blue, fontFamily: "Poppins"),
       getPages: AppRoutes.routes(),
+      home: const BottomBar(),
     );
   }
 }
